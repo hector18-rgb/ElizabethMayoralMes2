@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progreso y Registro Visual</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6ea8fe, #89c2ff);
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+
+        nav {
+            background: #ffffff;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            padding: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2d5da1;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #eaf3ff;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .section-box {
+            background: #ffffff;
+            border-radius: 18px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        }
+
+        .section-box h2 {
+            margin-top: 0;
+            color: #2d5da1;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 18px;
+        }
+
+        table th, table td {
+            padding: 14px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        table th {
+            background: #dcecff;
+        }
+
+        .success {
+            margin-top: 20px;
+            background: #e8fff1;
+            color: #1f7a46;
+            padding: 14px;
+            border-left: 5px solid #28a745;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            width: 260px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card strong {
+            display: block;
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #2d5da1;
+        }
+
+        .image-box img {
+            width: 100%;
+            max-width: 220px;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-box img:hover {
+            transform: scale(1.05);
+        }
+
+        .note {
+            margin-top: 20px;
+            background: #fff8e6;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Progreso del Paciente</h1>
+    <p>Seguimiento clínico y registro visual mensual</p>
+</header>
+
+<nav>
+    <a href="#">Inicio</a>
+    <a href="#">Introducción</a>
+    <a href="#">Análisis clínico</a>
+    <a href="#">Cálculo nutricional</a>
+    <a href="#">Régimen semanal</a>
+    <a href="#">Recomendaciones</a>
+    <a href="#">Lista de compras</a>
+    <a href="#">Progreso</a>
+</nav>
+
+<main>
+
+    <div class="section-box">
+        <h2>10. Registro visual</h2>
+        <p>
+            En esta sección se integran fotografías del paciente mes con mes para evaluar cambios físicos,
+            reforzar la adherencia al protocolo nutricional y visualizar el progreso real.
+        </p>
+
+        <table>
+            <tr>
+                <th>Periodo</th>
+                <th>Peso</th>
+                <th>Observación</th>
+            </tr>
+            <tr>
+                <td>Mes 1</td>
+                <td>78 kg</td>
+                <td>Inicio del protocolo</td>
+            </tr>
+            <tr>
+                <td>Mes 2</td>
+                <td>77.4 kg</td>
+                <td>Mejora digestiva y descenso progresivo</td>
+            </tr>
+        </table>
+
+        <div class="success">
+            Seguimiento clínico visual para reforzar la motivación del paciente.
+        </div>
+    </div>
+
+    <div class="section-box">
+        <h2>Fotos del paciente</h2>
+
+        <div class="grid">
+            <div class="card">
+                <strong>MES 1</strong>
+                <div class="image-box">
+                    <img src="AVANCE/AVANCE1A.jpeg" alt="Mes 1">
+                </div>
+            </div>
+
+            <div class="card">
+                <strong>MES 1</strong>
+                <div class="image-box">
+                    <img src="AVANCE/AVANCE1C.jpeg" alt="Mes 2">
+                </div>
+            </div>
+        </div>
+
+        <div class="note">
+            No cuentes los días, haz que los días cuenten.
+        </div>
+    </div>
+
+</main>
+
+<div class="footer">
+    Registro visual y progreso clínico
+</div>
+
+</body>
+</html>
